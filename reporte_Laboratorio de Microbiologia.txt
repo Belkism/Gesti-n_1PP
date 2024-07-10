@@ -1,8 +1,0 @@
-Fecha de solicitud: 08-07-2024
-Id: 6
-Nombre del Proyecto: Laboratorio de Microbiologia
-Descripcion del Proyecto: Investigacion y desarrollo en microbiologi­a aplicada
-Fecha de Inicio: 13-07-2023
-Fecha de Fin: 07-10-2025
-Presupuesto: 	325746996
-Estado: Activo

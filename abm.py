@@ -46,45 +46,45 @@ def ingresar_txt_alfa(mensaje:str,mensaje_error:str): # Esta función, permite e
 
     return cadena_limpia #Retorna una cadena limpia.
 
-# def ingresar_fecha_proyecto():
-#     while True:
-#         try:
-#             dia = int(input("Por favor, ingrese el día (1-31): "))
-#             if 1 <= dia <= 31:
-#                 break
-#             else:
-#                 print("Día inválido. Debe estar entre 1 y 31.")
-#         except ValueError:
-#             print("Entrada inválida. Por favor, ingrese un número entero.")
+def ingresar_fecha_proyecto():
+    while True:
+        try:
+            dia = int(input("Por favor, ingrese el día (1-31): "))
+            if 1 <= dia <= 31:
+                break
+            else:
+                print("Día inválido. Debe estar entre 1 y 31.")
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número entero.")
 
-#     while True:
-#         try:
-#             mes = int(input("Por favor, ingrese el mes (1-12): "))
-#             if 1 <= mes <= 12:
-#                 break
-#             else:
-#                 print("Mes inválido. Debe estar entre 1 y 12.")
-#         except ValueError:
-#             print("Entrada inválida. Por favor, ingrese un número entero.")
+    while True:
+        try:
+            mes = int(input("Por favor, ingrese el mes (1-12): "))
+            if 1 <= mes <= 12:
+                break
+            else:
+                print("Mes inválido. Debe estar entre 1 y 12.")
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número entero.")
 
-#     while True:
-#         try:
-#             anio = int(input("Por favor, ingrese el año (2010-2050): ")) #Colocar DATATIME.NOW()
-#             if 2010 <= anio <= 2050:
-#                 break
-#             else:
-#                 print("Año inválido. Debe estar entre 2010 y 2050.")
-#         except ValueError:
-#             print("Entrada inválida. Por favor, ingrese un número entero.")
+    while True:
+        try:
+            anio = int(input("Por favor, ingrese el año (2010-2050): ")) #Colocar DATATIME.NOW()
+            if 2010 <= anio <= 2050:
+                break
+            else:
+                print("Año inválido. Debe estar entre 2010 y 2050.")
+        except ValueError:
+            print("Entrada inválida. Por favor, ingrese un número entero.")
 
-#     # Verificar si la fecha es válida
-#     try:
-#         fecha = datetime(anio, mes, dia)
-#         fecha_formateada = fecha.strftime("%d-%m-%Y")
-#         return fecha_formateada
-#     except ValueError:
-#         print("La fecha ingresada no es válida. Intente nuevamente.")
-#         return ingresar_fecha_proyecto()
+    # Verificar si la fecha es válida
+    try:
+        fecha = datetime(anio, mes, dia)
+        fecha_formateada = fecha.strftime("%d-%m-%Y")
+        return fecha_formateada
+    except ValueError:
+        print("La fecha ingresada no es válida. Intente nuevamente.")
+        return ingresar_fecha_proyecto()
 
 def ingresar_presupuesto(mensaje:str,mensaje_error:str,numero:int): # Esta función permite ingresar presupuestos.
     numero_presupuesto = int(input(mensaje)) #Ingrese presupuesto
@@ -238,9 +238,9 @@ def cancelar_proyecto(lista_proyectos:list): # Esta función nos permite cancela
     #     print("No se encontró ningún proyecto con el ID especificado.")
     return id_cancelar
 
-# print(cancelar_proyecto(lista_proyectos))
+#print(cancelar_proyecto(lista_proyectos))
 
-def comprobar_proyectos(lista_proyectos:list): #Cambiará el estado de todos los proyectos que ya hayan finalizados.
+def comprobar_proyectos(lista_proyectos:list) -> bool: #Cambiará el estado de todos los proyectos que ya hayan finalizados.
     cambio= False
     for proyecto in lista_proyectos:
         Fecha_fin = datetime.strptime(proyecto["Fecha de Fin"], '%d-%m-%Y')
@@ -248,9 +248,12 @@ def comprobar_proyectos(lista_proyectos:list): #Cambiará el estado de todos los
             proyecto["Estado"] = "Activo"
             cambio= True
             print(" El Estado del proyecto a sido cambiado")
+            break
     if not cambio:
         print("No se encontraron proyectos para finalizar")
     return cambio
+
+# print(comprobar_proyectos(lista_proyectos))
 
 
 def calcular_presupuesto_promedio(lista_proyectos:list): #Esta función nos calcula el presupuesto de todos los proyectos
@@ -307,7 +310,6 @@ def ordenar_proyectos(lista_proyectos:list, modo:str, ascendente:bool=True): # N
 
     return lista_ordenada # Nos retorna una lista ordenada.
 
-#ordenar_proyectos(lista_proyectos, "nombre", ascendente=False)
 
 def presupuesto_txt(lista_proyectos:list,presupuesto_ingresado:float,mensaje:str): # Esta función nos retorna un reporte txt, con todos los proyectos que sean mayor al presupuesto ingresado.
     proyecto_condicion = [] # Cree esta lista vacia para guardar todos los proyectos que cumplan con la condicón.
@@ -339,7 +341,7 @@ def presupuesto_txt(lista_proyectos:list,presupuesto_ingresado:float,mensaje:str
                 archivo.write(f"Estado: {proyecto['Estado']}\n")
                 archivo.write("\n")
     return proyecto_condicion
-#print(presupuesto_txt(lista_proyectos,7000000,"Reportes Txt"))
+
 
 
 def leer_numero_reporte():
@@ -391,7 +393,6 @@ def buscar_proyecto_nombre_txt(nombre_buscar: str):
         print(f"No se encontró ningún proyecto con el nombre '{nombre_buscar}' en nuestra base de datos.")
 
     return encontrado
-#print(buscar_proyecto_nombre_txt("Investigacion de Trastornos del Sueno")
 
 
 
@@ -401,7 +402,7 @@ def retomar_proyecto(lista_proyectos: list):
     for proyecto in lista_proyectos:
         if proyecto.get("Estado") == "Cancelado":  # Usamos get para evitar errores si "Estado" no existe
             print(proyecto.get("Estado"))
-            proyecto["Estado"] = "Activo"  # Cambiamos "Activado" por "Activo" para mantener consistencia
+            proyecto["Estado"] = "Activo" 
             proyecto_retomado= True
             print(f"El proyecto '{proyecto['Nombre del Proyecto']}' ha sido retomado y ahora está 'Activo'.")
 
@@ -412,7 +413,7 @@ def retomar_proyecto(lista_proyectos: list):
 
     return proyecto_retomado
 
-#print(retomar_proyecto(lista_proyectos))
+print(retomar_proyecto(lista_proyectos))
 
 
 

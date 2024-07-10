@@ -1,20 +1,84 @@
-Cantidad de proyectos que cumplen: 2
+Cantidad de proyectos que cumplen: 10
 
 Reportes de Proyectos:
-Fecha de solicitud: 08-07-2024
+Fecha de solicitud: 10-07-2024
 Id: 1
+Nombre del Proyecto: Programacion
+Descripcion del Proyecto: Sistema de gestion de recursos empresariales para mejorar la eficiencia operativa
+Fecha de Inicio: 13-10-2023
+Fecha de Fin: 17-04-2025
+Presupuesto: 42931805
+Estado: Cancelado
+
+Id: 2
+Nombre del Proyecto: Sistema de Planificacion de Recursos
+Descripcion del Proyecto: Desarrollo de un sistema avanzado de planificacion de recursos empresariales
+Fecha de Inicio: 17-07-2023
+Fecha de Fin: 18-05-2025
+Presupuesto: 642055083
+Estado: Cancelado                     
+
+Id: 3
+Nombre del Proyecto: Sistema de Informacion Epidemiologica
+Descripcion del Proyecto: Plataforma para el seguimiento y analisis de datos epidemiologicos
+Fecha de Inicio: 	14-06-2023
+Fecha de Fin: 02-02-2024
+Presupuesto: 850312588
+Estado: Activo
+
+Id: 4
+Nombre del Proyecto: Red de Transporte Publico
+Descripcion del Proyecto: Mejora y ampliacion de la infraestructura de transporte publico
+Fecha de Inicio: 30-03-2023
+Fecha de Fin: 24-07-2023
+Presupuesto: 937383174
+Estado: Activo       
+
+Id: 5
+Nombre del Proyecto: Royal Guard Tales
+Descripcion del Proyecto: La mejor obra de ficcion jamas creada
+Fecha de Inicio: 06-06-2021
+Fecha de Fin: 03-02-2030
+Presupuesto: 149912234
+Estado: Finalizado                                                                                                                                
+
+Id: 6
+Nombre del Proyecto: Laboratorio de Microbiologia
+Descripcion del Proyecto: Investigacion y desarrollo en microbiologi­a aplicada
+Fecha de Inicio: 13-07-2023
+Fecha de Fin: 07-10-2025
+Presupuesto: 325746996
+Estado: Activo                                                                                                                        
+
+Id: 7
+Nombre del Proyecto: Planificacion de Sucesion
+Descripcion del Proyecto: Desarrollo de un sistema para la planificacion de la sucesion en empresas
+Fecha de Inicio: 01-01-2023
+Fecha de Fin: 20-05-2023
+Presupuesto: 231786436
+Estado: Activo       
+
+Id: 8
+Nombre del Proyecto: Sistema de Gestion de Documentos
+Descripcion del Proyecto: Desarrollo de un sistema para la gestion y archivo de documento
+Fecha de Inicio: 06-09-2023
+Fecha de Fin: 19-05-2023
+Presupuesto: 65296214
+Estado: Activo       
+
+Id: 9
+Nombre del Proyecto: Investigacion de Trastornos del Sueno
+Descripcion del Proyecto: Estudio y tratamiento de diversos trastornos del sueno
+Fecha de Inicio: 23-05-2023
+Fecha de Fin: 03-08-2023
+Presupuesto: 555060646
+Estado: Activo       
+
+Id: 10
 Nombre del Proyecto: Sistema de Incendios Externos
 Descripcion del Proyecto: Desarrollo de un sistema avanzado de prevencion y control de incendios
 Fecha de Inicio: 14-02-2023
 Fecha de Fin: 03-04-2023
-Presupuesto: 5000000
-Estado: Cancelado       
-
-Id: 2
-Nombre del Proyecto: belkis
-Descripcion del Proyecto: felicidad
-Fecha de Inicio: 08/07/2024
-Fecha de Fin: 06/06/2025
-Presupuesto: 8000000
-Estado: Activo  
+Presupuesto: 240045465
+Estado: Activo   
 

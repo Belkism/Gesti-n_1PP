@@ -40,8 +40,7 @@ def ingresar_cadena(mensaje:str,mensaje_error:str): # la función retorna una ca
         cadena= input(mensaje_error)
 
     return cadena_limpia
-# prueba = ingresar_cadena("ingrese cadena:","El mensaje es incorrecto")
-# print (prueba)
+
     
 
 def ingresar_txt_alfa(mensaje:str,mensaje_error:str): # La funcion retoma una cadena  con texto alfanumerico que no supera los 200 caracte
@@ -52,8 +51,7 @@ def ingresar_txt_alfa(mensaje:str,mensaje_error:str): # La funcion retoma una ca
 
     return cadena_limpia
 
-# previa = ingresar_txt_alfa("Ingrese texto:","Error, ingrese nuevamente el texto")
-# print(previa)
+
 
     
 def ingresar_enteros(mensaje:str,mensaje_error:str,valor_min:int,valor_max:int): #Esta funcion nos retorna unicamente numeros
@@ -62,8 +60,7 @@ def ingresar_enteros(mensaje:str,mensaje_error:str,valor_min:int,valor_max:int):
         numero = int(input(mensaje_error))
     return numero
     
-# prueba = ingresar_enteros("Ingrese Numero:","Error!Ingrese nuevamente",1,100)
-# print(prueba)
+
 
 def ingresar_presupuesto(mensaje:str,mensaje_error:str,numero:int): # Retorna un presupuesto
     numero_presupuesto = int(input(mensaje)) #Ingresa presupuesto
@@ -117,13 +114,13 @@ def ingresar_fecha_proyecto(): # En esta función se ingresa la fecha y utilizam
     #   Se verifica que la fecha sea validada y se formatea con datatime.
     try:
         fecha = datetime(anio, mes, dia)
-        fecha_formateada = fecha.strftime("%d/%m/%Y")
+        fecha_formateada = fecha.strftime("%d-%m-%Y")
         return fecha_formateada
     except ValueError:
         print("La fecha ingresada no es válida. Intente nuevamente.")
         return ingresar_fecha_proyecto()
     
-#print(ingresar_fecha_proyecto())
+
 
 
 

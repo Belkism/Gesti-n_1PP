@@ -50,7 +50,7 @@ def menu():
                     print("El proyecto no fue agregado.")
             else:
                 print("Error: Se ha alcanzado el límite de proyectos activos.")
-                    
+            
         
         elif opcion == 2:
             modificar_proyecto(lista_proyectos)   
@@ -83,8 +83,7 @@ def menu():
             proyectos_ordenados = ordenar_proyectos(lista_proyectos, modo, ascendente)
 
             if proyectos_ordenados:
-                for proyecto in proyectos_ordenados:
-                    print(proyecto)
+                print(mostrar_proyectos(proyectos_ordenados))
             else:
                 print("No se pudieron ordenar los proyectos. Revise el criterio y la dirección de ordenamiento.")
         elif opcion == 9:  

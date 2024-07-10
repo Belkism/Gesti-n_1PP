@@ -53,7 +53,7 @@ def parse_csv(nombre_archivo:str):
         print("ARCHIVO NO ENCONTRADO")
         
 lista_proyectos = parse_csv("proyectos.csv")
-# print(lista_proyectos)
+
 
 
 #Normalizamos nuestros base de datos
@@ -82,8 +82,6 @@ def normalizar_datos (lista_proyectos:list): # Creo una funcion para normalizar 
     return datos_normalizados
 
             
-# resultado= normalizar_datos(lista_proyectos)
-# print(resultado)
 
 
 
@@ -100,7 +98,7 @@ def actualizar_csv(nombre_archivo: str, lista_proyectos: list): #Creo una funci√
         print(f"Archivo guardado en: {os.path.abspath(nombre_archivo)}")
     else:
         print("No hay datos para escribir en el archivo") #revisar si esta tomando el 0 o 1 en un Bool
-# print(actualizar_csv("proyectos.csv",lista_proyectos))
+
     
 def cargar_proyectos(nombre_archivo): # Esta funcion se creo para cargar proyectos
     global id_auto_incremental # Se declara que la funcion usa una variable global.
@@ -114,5 +112,5 @@ def cargar_proyectos(nombre_archivo): # Esta funcion se creo para cargar proyect
     else:
         id_auto_incremental = id_auto_incremental #Inicializa id_auto_incremental en 0 si el archivo no existe. 
 
-# print(cargar_proyectos("proyectos.csv"))
+
 

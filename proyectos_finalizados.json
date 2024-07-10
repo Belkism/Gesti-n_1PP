@@ -1,20 +1,11 @@
 [
     {
-        "id": 8,
-        "Nombre del Proyecto": "Sistema de Gestion de Documentos",
-        "Descripcion": "Desarrollo de un sistema para la gestion y archivo de documento",
-        "Fecha de inicio": "06-09-2023",
-        "Fecha de Fin": "19-05-2023",
-        "Presupuesto": 3000000,
-        "Estado": "Finalizado                                                       "
-    },
-    {
-        "id": 9,
-        "Nombre del Proyecto": "Investigacion de Trastornos del Sueno",
-        "Descripcion": "Estudio y tratamiento de diversos trastornos del sueno",
-        "Fecha de inicio": "23-05-2023",
-        "Fecha de Fin": "03-08-2023",
-        "Presupuesto": 4000000,
-        "Estado": "Finalizado                                                         "
+        "id": 5,
+        "Nombre del Proyecto": "Royal Guard Tales",
+        "Descripcion": "La mejor obra de ficcion jamas creada",
+        "Fecha de inicio": "06-06-2021",
+        "Fecha de Fin": "03-02-2030",
+        "Presupuesto": 149912234,
+        "Estado": "Finalizado                                                                                                                                "
     }
 ]

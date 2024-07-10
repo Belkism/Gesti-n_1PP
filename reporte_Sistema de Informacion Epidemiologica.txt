@@ -1,0 +1,8 @@
+Fecha de solicitud: 10-07-2024
+Id: 3
+Nombre del Proyecto: Sistema de Informacion Epidemiologica
+Descripcion del Proyecto: Plataforma para el seguimiento y analisis de datos epidemiologicos
+Fecha de Inicio: 	14-06-2023
+Fecha de Fin: 02-02-2024
+Presupuesto: 850312588
+Estado: Cancelado
