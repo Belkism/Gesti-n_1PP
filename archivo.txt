@@ -1,0 +1,20 @@
+Cantidad de proyectos que cumplen: 2
+
+Reportes de Proyectos:
+Fecha de solicitud: 08-07-2024
+Id: 1
+Nombre del Proyecto: Sistema de Incendios Externos
+Descripcion del Proyecto: Desarrollo de un sistema avanzado de prevencion y control de incendios
+Fecha de Inicio: 14-02-2023
+Fecha de Fin: 03-04-2023
+Presupuesto: 5000000
+Estado: Cancelado       
+
+Id: 2
+Nombre del Proyecto: belkis
+Descripcion del Proyecto: felicidad
+Fecha de Inicio: 08/07/2024
+Fecha de Fin: 06/06/2025
+Presupuesto: 8000000
+Estado: Activo  
+
